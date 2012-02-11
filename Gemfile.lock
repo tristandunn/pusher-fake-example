@@ -86,6 +86,10 @@ GEM
     multi_json (1.0.4)
     nokogiri (1.5.0)
     polyglot (0.3.3)
+    pusher (0.9.2)
+      multi_json (~> 1.0)
+      ruby-hmac (~> 0.4.0)
+      signature (~> 0.1.2)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
@@ -132,6 +136,8 @@ GEM
       multi_json (~> 1.0.4)
       rubyzip
     shoulda-matchers (1.0.0)
+    signature (0.1.2)
+      ruby-hmac
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -157,6 +163,7 @@ PLATFORMS
 DEPENDENCIES
   bourne (= 1.0)
   cucumber-rails (= 1.2.1)
+  pusher (= 0.9.2)
   pusher-fake!
   rails (= 3.2.1)
   rspec-rails (= 2.8.1)

@@ -1,0 +1,16 @@
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    <% if defined?(PusherFake) %>
+      Pusher.host    = <%== PusherFake.configuration.socket_host.to_json %>;
+      Pusher.ws_port = <%== PusherFake.configuration.socket_port.to_json %>;
+    <% end %>
+
+    Pusher.instance = new Pusher(<%== Pusher.key.to_json %>);
+
+    var
+    Chat = Pusher.instance.subscribe("chat");
+    Chat.bind("message", function(message) {
+      document.body.innerHTML = message.body;
+    });
+  }, false);
+</script>
