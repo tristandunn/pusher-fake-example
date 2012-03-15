@@ -1,13 +1,3 @@
-GIT
-  remote: git://github.com/tristandunn/pusher-fake.git
-  revision: d9309262dba2f5b6ca57ac6842d6fae908198a06
-  specs:
-    pusher-fake (0.1.0)
-      em-websocket (= 0.3.6)
-      ruby-hmac (= 0.4.0)
-      thin (= 1.3.1)
-      yajl-ruby (= 1.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,7 +28,7 @@ GEM
     activesupport (3.2.1)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    addressable (2.2.6)
+    addressable (2.2.7)
     arel (3.0.0)
     bourne (1.0)
       mocha (= 0.9.8)
@@ -90,6 +80,11 @@ GEM
       multi_json (~> 1.0)
       ruby-hmac (~> 0.4.0)
       signature (~> 0.1.2)
+    pusher-fake (0.1.0)
+      em-websocket (= 0.3.6)
+      ruby-hmac (= 0.4.0)
+      thin (= 1.3.1)
+      yajl-ruby (= 1.1.0)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
@@ -164,7 +159,7 @@ DEPENDENCIES
   bourne (= 1.0)
   cucumber-rails (= 1.2.1)
   pusher (= 0.9.2)
-  pusher-fake!
+  pusher-fake (= 0.1.0)
   rails (= 3.2.1)
   rspec-rails (= 2.8.1)
   shoulda-matchers (= 1.0.0)
