@@ -9,8 +9,8 @@ Pusher.host = PusherFake.configuration.web_host
 Pusher.port = PusherFake.configuration.web_port
 
 # Start the fake web server.
-Thread.new { PusherFake::Server.start }.tap do |thread|
-  at_exit { thread.exit }
+fork { PusherFake::Server.start }.tap do |id|
+  at_exit { Process.kill("KILL", id) }
 end
 
 # Reset channels between scenarios.

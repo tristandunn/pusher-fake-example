@@ -1,3 +1,5 @@
+<ul></ul>
+
 <script>
   window.addEventListener("DOMContentLoaded", function() {
     <% if defined?(PusherFake) %>
@@ -10,7 +12,12 @@
     var
     Chat = Pusher.instance.subscribe("chat");
     Chat.bind("message", function(message) {
-      document.body.innerHTML = message.body;
+      var list    = document.getElementsByTagName("ul")[0],
+          item    = document.createElement("li"),
+          message = document.createTextNode(message.body);
+
+      item.appendChild(message);
+      list.appendChild(message);
     });
   }, false);
 </script>

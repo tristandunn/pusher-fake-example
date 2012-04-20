@@ -8,4 +8,8 @@ Feature: Server triggers a message
       | body          |
       | Hello, world! |
     Then I should see "Hello, world!"
+    And I should see "A user joined."
     And Bob should see "Hello, world!"
+    And Bob should not see "A user joined."
+    When Sue is connected
+    Then Bob should see "A user joined."
