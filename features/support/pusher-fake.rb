@@ -1,5 +1,6 @@
 # Use the same API key and secret as the live version.
 PusherFake.configure do |configuration|
+  configuration.app_id = Pusher.app_id
   configuration.key    = Pusher.key
   configuration.secret = Pusher.secret
 end
