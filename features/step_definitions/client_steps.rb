@@ -10,8 +10,11 @@ Given %{$name is connected} do |name|
 end
 
 Then "I should be connected" do
-  wait_until do
-    state = page.evaluate_script("Pusher.instance.connection.state")
-    state == "connected"
+  Timeout.timeout(5) do
+    state = nil
+
+    until state == "connected"
+      state = page.evaluate_script("Pusher.instance.connection.state")
+    end
   end
 end
