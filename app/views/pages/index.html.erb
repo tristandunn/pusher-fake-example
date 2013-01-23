@@ -3,10 +3,7 @@
 <%= javascript_include_tag "pusher-1.12.5" %>
 <script>
   window.addEventListener("DOMContentLoaded", function() {
-    <% if defined?(PusherFake) %>
-      Pusher.host    = <%== PusherFake.configuration.socket_host.to_json %>;
-      Pusher.ws_port = <%== PusherFake.configuration.socket_port.to_json %>;
-    <% end %>
+    <%== PusherFake.javascript if defined?(PusherFake) %>
 
     Pusher.instance = new Pusher(<%== Pusher.key.to_json %>);
 
