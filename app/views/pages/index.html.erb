@@ -1,11 +1,13 @@
 <ul></ul>
 
-<%= javascript_include_tag "pusher-1.12.5" %>
+<%= javascript_include_tag "pusher-2.1.3" %>
 <script>
   window.addEventListener("DOMContentLoaded", function() {
-    <%== PusherFake.javascript if defined?(PusherFake) %>
-
-    Pusher.instance = new Pusher(<%== Pusher.key.to_json %>);
+    <% if defined?(PusherFake) %>
+      Pusher.instance = <%== PusherFake.javascript %>;
+    <% else %>
+      // Other environments, such as production.
+    <% end %>
 
     var
     Chat = Pusher.instance.subscribe("chat");
