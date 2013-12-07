@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "rails", "3.2.13"
+gem "rails", "3.2.16"
 
 group :test do
   gem "bourne",             "1.5.0"
@@ -8,5 +8,5 @@ group :test do
   gem "pusher",             "0.12.0"
   gem "pusher-fake",        "0.11.0"
   gem "rspec-rails",        "2.14.0"
-  gem "selenium-webdriver", "2.37.0"
+  gem "selenium-webdriver", "2.38.0"
 end
