@@ -5,21 +5,29 @@ An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) wi
 
 ## How-To
 
-### 1. Configure the Pusher JS client to use the PusherFake server in your JavaScript.
+#### 1. Use the PusherFake JS for the Pusher JS instance.
 
 ```erb
 <script>
-  <%== PusherFake.javascript if defined?(PusherFake) %>
+  <% if defined?(PusherFake) %>
+    // Test environment.
+    //
+    // Note: Ensure output is not HTML escaped, such as with the raw helper in Rails.
+    var instance = <%= PusherFake.javascript %>;
+  <% else %>
+    // Other environments, such as production.
+    var instance = new Pusher(...);
+  <% end %>
 </script>
 ```
 
-### 2. Configure and start PusherFake in your Cucumber environment.
+#### 2. Configure and start PusherFake in your Cucumber environment.
 
 ```ruby
 require "pusher-fake/cucumber"
 ```
 
-### 3. Enjoy testing your Pusher application!
+#### 3. Enjoy testing your Pusher application!
 
 ## License
 
