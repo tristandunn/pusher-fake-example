@@ -1,3 +1,3 @@
 PusherFakeExample::Application.routes.draw do
-  root to: "Pages#index"
+  root to: "pages#index"
 end
