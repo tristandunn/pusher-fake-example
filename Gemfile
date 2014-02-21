@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
 gem "pusher",      "0.12.0"
-gem "pusher-fake", "0.13.0"
-gem "rails",       "4.0.2"
+gem "pusher-fake", "0.14.0"
+gem "rails",       "4.0.3"
 
 group :test do
   gem "bourne",          "1.5.0"
