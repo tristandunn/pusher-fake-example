@@ -12,11 +12,11 @@
     var
     Chat = Pusher.instance.subscribe("chat");
     Chat.bind("message", function(message) {
-      var list    = document.getElementsByTagName("ul")[0],
-          item    = document.createElement("li"),
-          message = document.createTextNode(message.body);
+      var list = document.getElementsByTagName("ul")[0],
+          item = document.createElement("li"),
+          text = document.createTextNode(message.body);
 
-      item.appendChild(message);
+      item.appendChild(text);
       list.appendChild(item);
     });
   }, false);
