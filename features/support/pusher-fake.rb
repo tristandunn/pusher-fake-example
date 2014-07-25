@@ -1,1 +1,1 @@
-require "pusher-fake/cucumber"
+require "pusher-fake/support/cucumber"

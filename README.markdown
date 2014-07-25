@@ -3,6 +3,8 @@
 
 An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) with Cucumber to test a Rails application.
 
+`rake` to run test suite.
+
 ## How-To
 
 #### 1. Use the PusherFake JS for the Pusher JS instance.
@@ -24,7 +26,7 @@ An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) wi
 #### 2. Configure and start PusherFake in your Cucumber environment.
 
 ```ruby
-require "pusher-fake/cucumber"
+require "pusher-fake/support/cucumber"
 ```
 
 #### 3. Enjoy testing your Pusher application!
