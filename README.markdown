@@ -1,6 +1,6 @@
 # pusher-fake-example [![Build Status](http://img.shields.io/travis/tristandunn/pusher-fake-example.svg)](https://travis-ci.org/tristandunn/pusher-fake-example) [![Dependency Status](http://img.shields.io/gemnasium/tristandunn/pusher-fake-example.svg)](https://gemnasium.com/tristandunn/pusher-fake-example)
 
-An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) with Cucumber to test a Rails application.
+An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) with RSpec to test a Rails application.
 
 ## How-To
 
@@ -20,10 +20,10 @@ An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) wi
 </script>
 ```
 
-#### 2. Configure and start PusherFake in your Cucumber environment.
+#### 2. Configure and start PusherFake in your RSpec environment.
 
 ```ruby
-require "pusher-fake/support/cucumber"
+require "pusher-fake/support/rspec"
 ```
 
 #### 3. Enjoy testing your Pusher application!

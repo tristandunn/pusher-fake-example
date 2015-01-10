@@ -1,3 +1,0 @@
-When %{a "$event" event is triggered on the "$channel" channel with:} do |event, channel, table|
-  Pusher.trigger(channel, event, table.hashes.first)
-end
