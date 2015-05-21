@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
-gem "pusher", "0.14.4"
-gem "rails",  "4.2.0"
+gem "pusher", "0.14.5"
+gem "rails",  "4.2.1"
 
 group :development, :test do
-  gem "rspec-rails", "3.2.0"
+  gem "rspec-rails", "3.2.1"
 end
 
 group :test do
-  gem "capybara-webkit", "1.4.1"
-  gem "pusher-fake",     "1.3.0"
+  gem "capybara-webkit", "1.5.1"
+  gem "pusher-fake",     "1.4.0"
 end
