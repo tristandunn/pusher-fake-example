@@ -4,4 +4,4 @@
 Rails.application.config.assets.version = "1.0"
 
 # Precompile additional assets.
-Rails.application.config.assets.precompile += ["pusher-2.2.3.js"]
+Rails.application.config.assets.precompile += ["pusher-3.0.0.js"]
