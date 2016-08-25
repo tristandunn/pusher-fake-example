@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "pusher", "1.1.0"
+gem "pusher", "1.3.0"
 gem "rails",  "5.0.0.1"
 
 group :development, :test do
