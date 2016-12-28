@@ -8,6 +8,6 @@ group :development, :test do
 end
 
 group :test do
-  gem "capybara-webkit", "1.11.1"
-  gem "pusher-fake",     "1.7.0"
+  gem "poltergeist", "1.12.0"
+  gem "pusher-fake", "1.7.0"
 end

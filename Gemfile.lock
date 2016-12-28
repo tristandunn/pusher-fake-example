@@ -42,16 +42,14 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
     builder (3.2.2)
-    capybara (2.7.1)
+    capybara (2.11.0)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    capybara-webkit (1.11.1)
-      capybara (>= 2.3.0, < 2.8.0)
-      json
+    cliver (0.3.2)
     concurrent-ruby (1.0.2)
     cookiejar (0.3.3)
     daemons (1.2.4)
@@ -74,7 +72,6 @@ GEM
     http_parser.rb (0.6.0)
     httpclient (2.8.2.4)
     i18n (0.7.0)
-    json (2.0.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -89,6 +86,10 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    poltergeist (1.12.0)
+      capybara (~> 2.1)
+      cliver (~> 0.3.1)
+      websocket-driver (>= 0.2.0)
     public_suffix (2.0.3)
     pusher (1.3.0)
       httpclient (~> 2.7)
@@ -169,7 +170,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara-webkit (= 1.11.1)
+  poltergeist (= 1.12.0)
   pusher (= 1.3.0)
   pusher-fake (= 1.7.0)
   rails (= 5.0.0.1)

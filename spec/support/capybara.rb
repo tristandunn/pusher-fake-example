@@ -1,5 +1,7 @@
-Capybara.javascript_driver = :webkit
+require "capybara/poltergeist"
 
-Capybara::Webkit.configure do |config|
-  config.block_unknown_urls
+Capybara.register_driver :poltergeist do |app|
+  Capybara::Poltergeist::Driver.new(app, url_whitelist: [])
 end
+
+Capybara.javascript_driver = :poltergeist
