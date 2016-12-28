@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "pusher", "1.3.0"
-gem "rails",  "5.0.0.1"
+gem "rails",  "5.0.1"
 
 group :development, :test do
   gem "rspec-rails", "3.5.2"
