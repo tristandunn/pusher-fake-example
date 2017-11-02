@@ -13,5 +13,5 @@ end
 
 group :test do
   gem "poltergeist", "1.16.0"
-  gem "pusher-fake", "1.8.0"
+  gem "pusher-fake", "1.9.0"
 end
