@@ -4,7 +4,7 @@ gem "pusher", "1.3.1"
 gem "rails",  "5.1.4"
 
 group :development, :test do
-  gem "rspec-rails", "3.7.1"
+  gem "rspec-rails", "3.7.2"
 end
 
 group :development do
@@ -12,6 +12,6 @@ group :development do
 end
 
 group :test do
-  gem "poltergeist", "1.16.0"
+  gem "poltergeist", "1.17.0"
   gem "pusher-fake", "1.9.0"
 end
