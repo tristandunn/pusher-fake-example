@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
 gem "pusher", "1.3.3"
-gem "rails",  "6.0.2.1"
+gem "rails",  "6.0.2.2"
 
 group :development, :test do
-  gem "rspec-rails", "3.9.0"
+  gem "rspec-rails", "4.0.0"
 end
 
 group :development do
