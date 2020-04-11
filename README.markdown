@@ -1,4 +1,4 @@
-# pusher-fake-example [![Build Status](https://travis-ci.org/tristandunn/pusher-fake-example.svg?branch=master)](https://travis-ci.org/tristandunn/pusher-fake-example)
+# pusher-fake-example [![Build Status](https://github.com/tristandunn/pusher-fake-example/workflows/CI/badge.svg)](https://github.com/tristandunn/pusher-fake-example/actions?query=workflow%3ACI)
 
 An example of using [pusher-fake](https://github.com/tristandunn/pusher-fake) with RSpec to test a Rails application.
 
