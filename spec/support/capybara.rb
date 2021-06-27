@@ -1,8 +1,4 @@
-require "capybara/poltergeist"
-
-Capybara.register_driver :poltergeist do |app|
-  Capybara::Poltergeist::Driver.new(app, url_whitelist: [])
-end
+require "capybara"
 
 Capybara.server = :webrick
-Capybara.javascript_driver = :poltergeist
+Capybara.javascript_driver = :selenium_chrome_headless
