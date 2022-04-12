@@ -135,10 +135,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    public_suffix (4.0.6)
+    public_suffix (4.0.7)
     pusher (2.0.2)
       httpclient (~> 2.8)
       multi_json (~> 1.15)
@@ -183,7 +183,7 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (2.2.1)
+    regexp_parser (2.3.0)
     rexml (3.2.5)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
