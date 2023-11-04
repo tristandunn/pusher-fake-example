@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "pusher",          "2.0.3"
-gem "rails",           "7.0.7.2"
+gem "rails",           "7.1.1"
 gem "sprockets-rails", "3.4.2"
 
 group :development, :test do
@@ -16,5 +16,5 @@ end
 group :test do
   gem "capybara",           "3.39.2"
   gem "pusher-fake",        "5.0.0"
-  gem "selenium-webdriver", "4.11.0"
+  gem "selenium-webdriver", "4.15.0"
 end
