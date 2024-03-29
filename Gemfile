@@ -16,5 +16,5 @@ end
 group :test do
   gem "capybara",           "3.40.0"
   gem "pusher-fake",        "6.0.0"
-  gem "selenium-webdriver", "4.18.1"
+  gem "selenium-webdriver", "4.19.0"
 end
