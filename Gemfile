@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
 gem "pusher",          "2.0.3"
-gem "rails",           "7.1.3.4"
-gem "sprockets-rails", "3.5.1"
+gem "rails",           "7.2.1"
+gem "sprockets-rails", "3.5.2"
 
 group :development, :test do
-  gem "rspec-rails", "6.1.3"
+  gem "rspec-rails", "6.1.4"
   gem "webrick",     "1.8.1"
 end
 
