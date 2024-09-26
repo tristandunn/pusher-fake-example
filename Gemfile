@@ -5,8 +5,8 @@ gem "rails",           "7.2.1"
 gem "sprockets-rails", "3.5.2"
 
 group :development, :test do
-  gem "rspec-rails", "6.1.4"
-  gem "webrick",     "1.8.1"
+  gem "rspec-rails", "7.0.1"
+  gem "webrick",     "1.8.2"
 end
 
 group :development do
@@ -16,5 +16,5 @@ end
 group :test do
   gem "capybara",           "3.40.0"
   gem "pusher-fake",        "6.0.0"
-  gem "selenium-webdriver", "4.23.0"
+  gem "selenium-webdriver", "4.25.0"
 end
