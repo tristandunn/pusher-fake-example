@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "pusher",          "2.0.3"
-gem "rails",           "8.0.0"
+gem "rails",           "8.0.1"
 gem "sprockets-rails", "3.5.2"
 
 group :development, :test do
