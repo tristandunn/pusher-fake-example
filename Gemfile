@@ -6,7 +6,7 @@ gem "rails",           "8.1.2"
 gem "sprockets-rails", "3.5.2"
 
 group :development, :test do
-  gem "rspec-rails", "8.0.3"
+  gem "rspec-rails", "8.0.4"
   gem "webrick",     "1.9.2"
 end
 
