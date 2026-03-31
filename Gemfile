@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "mutex_m",         "0.3.0"
-gem "pusher",          "2.0.4"
+gem "pusher",          "2.0.5"
 gem "rails",           "8.1.3"
 gem "sprockets-rails", "3.5.2"
 
