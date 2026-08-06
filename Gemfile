@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "mutex_m",         "0.3.0"
 gem "pusher",          "2.1.1"
-gem "rails",           "8.1.3"
+gem "rails",           "8.1.3.1"
 gem "sprockets-rails", "3.5.2"
 
 group :development, :test do
